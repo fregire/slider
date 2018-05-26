@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* Block - paths */
+/*** Страница - решения ***/
+
+/* Block - paths */
+.paths {
+	padding-bottom: 89px;
+}
+
+.paths__main-text {
+	max-width: 850px;
+	margin: 0 auto;
+	padding: 91px 30px;
+
+	text-align: center;
+}
+
+.paths__slider {
+	position: relative;
+
+	margin-bottom: 65px;
+}
+
+.paths__our-ways {
+	max-width: 1060px;
+	margin: 0 auto;
+	padding: 0 30px;
+}
+
+
+.paths__our-ways-img {
+	height: 62px;
+	display: flex;
+	align-items: center;
+}
+
+.paths__our-ways-img img {
+	width: auto;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+
+.paths__our-ways .slick-slide {
+	margin: 0 25px;
+	outline: none;
+}
+
+.paths__our-ways .slick-arrow {
+	border: none;
+}
+
+.paths__our-ways .slick-prev {
+	left: -30px;
+}
+
+.paths__our-ways .slick-next {
+	right: -30px;
+}
+
+.progress-slider .slick-dots {
+	bottom: 20px;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+.progress-slider .slick-dots li {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 3px solid rgba(255,255,255, .5);
+}
+
+.progress-slider .slick-dots li:hover {
+	border-color: rgba(255,255,255, 1);
+}
+
+
+.progress-slider .slick-dots .slick-active {
+	border-color: rgba(255, 255, 255, .2);
+}
+
+.progress-slider .slick-dots li.slick-active:hover {
+	border-color: rgba(255,255,255, .5);
+}
+
+.progress-slider .slick-dots .slick-active svg{
+	position: absolute;
+	left: -4px;
+	top: -3px;
+}
+
+.paths__slider .slick-arrow {
+	background-image: url(../img/svg/arrow-left-icon.svg);
+	border-color: #fff;
+}
+
+
+/* TODO: расположить стрелки слайдера правильно */
+.paths__slider .slick-next {
+	right: 50px;
+}
+
+/* Block - path-slider */
+
+
+.path-slider__wrapper {
+	max-width: 1170px;
+	padding: 0 15px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+
+.path-slider__slide {
+	padding-top: 40px;
+
+
+	background: url(../img/path-slider__bg-item-1.jpg) no-repeat;
+	background-size: cover;
+	background-position: 0 40px;
+}
+
+
+.path-slider__content {
+	padding-right: 80px;
+	flex: 1;
+
+	color: #fff;
+	font-size: 25px;
+	font-weight: 600;
+	text-align: right;
+	line-height: 1.4;
+}
+
+.path-slider__download {
+	margin-top: 40px;
+
+	text-decoration: none;
+}
+
+.path-slider .slick-arrow {
+	top: 55%;
+}
+.path-slider .slick-prev {
+	left: 5%;
+}
+
+.path-slider .slick-next {
+	right: 5%;
+}
+
+.path-slider {
+	background: blue;
+	height: 600px;
+}
+
+
+
+.prev,
+.next {
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+}
+.next {
+	right: 0;
+}
+
+.path-slider__slide {
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+	z-index: -1;
+
+	transition: all 1s;
+}
+
+.path-slider__img {
+	position: relative;
+	top: -30px;
+	left: -999px;
+
+	width: 62.6%;
+	flex-basis: 62.6%;
+
+	transition: all 1s;
+}
+
+.path-slider__text {
+	opacity: 0;
+	transition: all 1s;
+}
+
+.path-slider__slide--current {
+	z-index: 3;
+}
+
+.path-slider__slide--current .path-slider__text {
+	opacity: 1;
+}
+.path-slider__slide--current .path-slider__img {
+	left: 0;
+}
+</style>
+</head>
+<body>
+	<div class="paths__slider path-slider progress-slider">
+		<div class="path-slider__slide path-slider__slide--current">
+			<div class="path-slider__wrapper">
+				<div class="path-slider__img">
+					<img src="img/paths__item-1.png" alt="">
+				</div>
+				<div class="path-slider__content">
+					<p class="path-slider__text">
+						111111111
+						Комплексное оснащение отелей, ресторанов,баров, концертных залов и зон отдыха
+					</p>
+					<a href="#" class="path-slider__download btn">Скачать презентацию</a>
+				</div>							
+			</div>
+		</div>
+		<div class="path-slider__slide">
+			<div class="path-slider__wrapper">
+				<div class="path-slider__img">
+					<img src="img/решение-отель.png" alt="">
+				</div>
+				<div class="path-slider__content">
+					<p class="path-slider__text">
+						2222222
+						Комплексное оснащение отелей, ресторанов,баров, концертных залов и зон отдыха
+					</p>
+					<a href="#" class="path-slider__download btn">Скачать презентацию</a>
+				</div>							
+			</div>
+		</div>
+		<div class="path-slider__slide">
+			<div class="path-slider__wrapper">
+				<div class="path-slider__img">
+					<img src="img/решение-свет.png" alt="">
+				</div>
+				<div class="path-slider__content">
+					<p class="path-slider__text">
+						333333
+						Комплексное оснащение отелей, ресторанов,баров, концертных залов и зон отдыха
+					</p>
+					<a href="#" class="path-slider__download btn">Скачать презентацию</a>
+				</div>							
+			</div>
+		</div>
+		<button class="prev">Prev</button>
+		<button class="next">Next</button>
+	</div>
+
+	<script>
+		var slides = document.querySelectorAll(".path-slider__slide");
+		var current = 0;
+		for(var i = 0; i < slides.length; i++){
+			slides[i].setAttribute("data-index", i);
+		}
+
+		function clearClassOfCurrent(){
+			for(var i = 0; i < slides.length; i++){
+				if(slides[i].classList.contains("path-slider__slide--current")){
+					slides[i].classList.remove("path-slider__slide--current");
+				}
+			}
+		};
+		function moveNextSlide(){
+			if(current == slides.length - 1){
+				current = -1;
+			};
+			current++;
+			clearClassOfCurrent();
+			var timer = setTimeout(function(){
+				var i = 0;
+				if(i >= 1){
+					clearInterval(timer);
+				};
+				slides[current].classList.add("path-slider__slide--current");
+				i++;
+
+			}, 1000);
+		};
+
+		function movePrevSlide(){
+			if(current == 0){
+				current = slides.length;
+			}
+			current--;
+			clearClassOfCurrent();
+			var timer = setTimeout(function(){
+				var i = 0;
+				if(i >= 1){
+					clearInterval(timer);
+				};
+				slides[current].classList.add("path-slider__slide--current");
+				i++;
+
+			}, 1000);
+		}
+		document.querySelector(".next").addEventListener("click", function(){
+			moveNextSlide();
+		})
+		document.querySelector(".prev").addEventListener("click", function(){
+			movePrevSlide();
+		})
+		//clearClassOfCurrent(slides);
+	</script>
+</body>
+</html>
